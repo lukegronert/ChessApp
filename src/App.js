@@ -1,23 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Piece from './components/Piece';
+import Movements from './components/Movements';
 
 function App() {
+
+  const [selectedPiece, setSelectedPiece] = useState({});
+  const [moves, setMoves] = useState([]);
+  const [score, setScore] = useState(0);
+
+  const pieces = [
+    {
+      name: 'Pawn',
+      image: 'https://image.flaticon.com/icons/png/128/107/107616.png',
+    },
+    {
+      name: 'Knight',
+      image: 'https://image.flaticon.com/icons/png/128/726/726165.png',
+    },
+    {
+      name: 'Bishop',
+      image: 'https://image.flaticon.com/icons/png/128/107/107618.png',
+    },
+    {
+      name: 'Rook',
+      image: 'https://image.flaticon.com/icons/png/128/2313/2313658.png',
+    },
+    {
+      name: 'Queen',
+      image: 'https://image.flaticon.com/icons/png/128/44/44502.png',
+    },
+    {
+      name: 'King',
+      image: 'https://image.flaticon.com/icons/png/128/107/107613.png',
+    }
+  ];
+
+  const clickMovement = (moveName) => {
+    if(moveName === selectedPiece.name) {
+      console.log('WINNER');
+      setScore(score+1)
+      console.log(score)
+    } else {
+      console.log('LOSER');
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id='piece'>
+        <Piece pieces={pieces} selectedPiece={selectedPiece} setSelectedPiece={setSelectedPiece} score={score} />
+      </div>
+      <div id='movement'>
+        <Movements moves={moves} score={score} setMoves={setMoves}  onClick={clickMovement} />
+      </div>
     </div>
   );
 }
