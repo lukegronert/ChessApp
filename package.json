@@ -1,6 +1,6 @@
 {
   "name": "chess-app",
-  "homepage": "https://lukegronert.github.io/ChessApp",
+  "homepage": "http://lukegronert.github.io/ChessApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
