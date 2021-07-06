@@ -63,7 +63,7 @@ export default function Movements(props) {
     }, [score])
 
     return (
-        <div className='grid grid-cols-6'>
+        <div className='grid grid-cols-6 gap-x-20 px-5'>
             {moves.map((move) => {
                 return (
                     <div key={move.name} className='mx-auto' onClick={() => props.onClick(move.name)}>
