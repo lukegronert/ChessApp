@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ChessApp/static/css/main.d7782279.chunk.css",
-    "main.js": "/ChessApp/static/js/main.ab4819aa.chunk.js",
-    "main.js.map": "/ChessApp/static/js/main.ab4819aa.chunk.js.map",
+    "main.css": "/ChessApp/static/css/main.578e0c01.chunk.css",
+    "main.js": "/ChessApp/static/js/main.ad46e445.chunk.js",
+    "main.js.map": "/ChessApp/static/js/main.ad46e445.chunk.js.map",
     "runtime-main.js": "/ChessApp/static/js/runtime-main.8c4e7a8d.js",
     "runtime-main.js.map": "/ChessApp/static/js/runtime-main.8c4e7a8d.js.map",
     "static/js/2.3db62d50.chunk.js": "/ChessApp/static/js/2.3db62d50.chunk.js",
     "static/js/2.3db62d50.chunk.js.map": "/ChessApp/static/js/2.3db62d50.chunk.js.map",
     "index.html": "/ChessApp/index.html",
-    "static/css/main.d7782279.chunk.css.map": "/ChessApp/static/css/main.d7782279.chunk.css.map",
+    "static/css/main.578e0c01.chunk.css.map": "/ChessApp/static/css/main.578e0c01.chunk.css.map",
     "static/js/2.3db62d50.chunk.js.LICENSE.txt": "/ChessApp/static/js/2.3db62d50.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8c4e7a8d.js",
     "static/js/2.3db62d50.chunk.js",
-    "static/css/main.d7782279.chunk.css",
-    "static/js/main.ab4819aa.chunk.js"
+    "static/css/main.578e0c01.chunk.css",
+    "static/js/main.ad46e445.chunk.js"
   ]
 }
