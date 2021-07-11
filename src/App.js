@@ -57,6 +57,7 @@ function App() {
 
   return (
     <div className="App">
+    <h2>How does this piece move?</h2>
       <div id='piece' className='mt-5'>
         <Piece pieces={pieces} selectedPiece={selectedPiece} setSelectedPiece={setSelectedPiece} score={score} />
       </div>
